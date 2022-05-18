@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.game-over-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(19, 17, 17, 0.616);
+    display: none;
+
+}
+.game-over-modal div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+}
+.game-over-modal button{
+    padding: 10px;
+    color: rgb(202, 194, 194);
+    background-color: red;
+    border: none;
+}
+.game-win-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(87, 85, 85, 0.233);
+    display: none;
+
+}
+.game-win-modal div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 217, 0);
+}
+.game-win-modal button{
+    padding: 10px;
+    color: rgb(202, 194, 194);
+    background-color: rgb(255, 115, 0);
+    border: none;
+}
+.game-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: cornflowerblue;
+    /* display: none; */
+    z-index: 10;
+}
+.game-modal div{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game-modal div h1{
+    color: orange;
+}
+.game-modal div select,.game-modal div button{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+}
+.counter-time{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.5);
+}
+#counter-time{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+.game-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.game-text{
+    width: 10%;
+    color: white;
+    padding: 20px;
+}
+.game-text button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+}
+.game-body{
+    width: 90%;
+}
+.game-piano{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+.game-block{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    border: 1px solid rgba(87, 85, 85, 0.233);
+}
+#blockA,#blockB,#blockC{
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid white;
+}
+#blockD{
+    width: 25%;
+    height: 100%;
+}
+.pembatas-game{
+    width: 100%;
+    height: 2%;
+    background-color: grey;
+}
+.game-keyboard{
+    width: 100%;
+    height: 28%;
+    display: flex;
+}
+.keyA,.keyB,.keyC,.keyD{
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #3e8db1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 2em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.keyA:hover,.keyB:hover,.keyC:hover,.keyD:hover{
+    transform: scale(0.9);
+    background-color: #66cfff;
+}
+@media screen and (max-width:690px) {
+    .game-piano{
+        width: 80%;
+    }
+}

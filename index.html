@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano tiles</title>
+  <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font/css/all.css">
+</head>
+<body>
+  <!-- game over -->
+  <div class="game-over-modal">
+    <div>
+      <h2>GAME OVER !!!!!!</h2>
+      <button class="btn-game-over">Main Lagi</button>
+    </div>
+  </div>
+  <div class="game-win-modal">
+    <div>
+      <h2>Menang !!!!!!</h2>
+      <button class="btn-game-win">Main Lagi</button>
+    </div>
+  </div>
+  <!-- win game -->
+  <!-- game modal -->
+  <div class="game-modal">
+    <div>
+      <h1>PLAY PIANO TILES</h1>
+      <select id="song">
+        <option value="nada/MUSIC.mp3">Music 1</option>
+        <option value="nada/MUSIC.mp3">Music 1</option>
+      </select>
+      <button class="btn-start-game" disabled>PLAY</button>
+    </div>
+  </div>
+  <!-- counter time -->
+  <div class="counter-time">
+    <div id="counter-time">3</div>
+  </div>
+  <!-- game modal -->
+  <div class="game-content">
+    <div class="game-text">
+      <div><button class="btn-play-game"><span class="fa-solid fa-play d-block " id="font-game"></span><p class="text-play">Play</p></button></div>
+      <p class="time-game">Time </p>
+      <p class="text-score">Score</p>
+    </div>
+    <div class="game-body">
+      <div class="game-piano">
+        <div class="game-block">
+          <canvas id="blockA"></canvas>
+          <canvas id="blockB"></canvas>
+          <canvas id="blockC"></canvas>
+          <canvas id="blockD"></canvas>
+        </div>
+        <div class="pembatas-game"></div>
+        <div class="game-keyboard">
+          <div class="keyA">D</div>
+          <div class="keyB">F</div>
+          <div class="keyC">J</div>
+          <div class="keyD">K</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- audio -->
+  <audio src="" id="audio-game"></audio>
+  <audio src="" id="audioA"></audio>
+  <audio src="" id="audioB"></audio>
+  <audio src="" id="audioC"></audio>
+  <audio src="" id="audioD"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
